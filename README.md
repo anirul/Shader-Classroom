@@ -26,6 +26,8 @@ product) and the albedo.
 
 ## Remarks
 
+### UV texture coordinates
+
 The Color is mapped in space [0, 1] but as there is some fun going in the 
 modeling space we can have some inverted texturing coordinate. So if you look
 into the texture you can see that there is something only on the bottom, but 
@@ -35,3 +37,8 @@ So the easy solution would be to use an inversion.
 ```glsl
 vec2 vert_texcoord.y = 1 - vert_texcoord.y;
 ```
+
+### GLSL extention
+
+You can download an extention for Visual Studio to parse GLSL files 
+[here](https://marketplace.visualstudio.com/items?itemName=DanielScherzer.GLSL).
