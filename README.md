@@ -26,6 +26,15 @@ product) and the albedo.
 
 ## Remarks
 
+You can use Visual Studio to edit your files. Just open the folder with Visual
+Studio 2019 at the location you downloaded it. It should avoid uploading the 
+```.vs/*``` files as instructed in the ```.gitignore``` file.
+
+### GLSL extention
+
+You can download an extention for Visual Studio to parse GLSL files 
+[here](https://marketplace.visualstudio.com/items?itemName=DanielScherzer.GLSL).
+
 ### UV texture coordinates
 
 The Color is mapped in space [0, 1] but as there is some fun going in the 
@@ -37,8 +46,3 @@ So the easy solution would be to use an inversion.
 ```glsl
 vec2 vert_texcoord.y = 1 - vert_texcoord.y;
 ```
-
-### GLSL extention
-
-You can download an extention for Visual Studio to parse GLSL files 
-[here](https://marketplace.visualstudio.com/items?itemName=DanielScherzer.GLSL).
