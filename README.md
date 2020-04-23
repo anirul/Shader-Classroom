@@ -48,10 +48,11 @@ vec2 vert_texcoord.y = 1 - vert_texcoord.y;
 ```
 
 This is due to an invertion of standard between OpenGL and DirectX in OpenGL the
-origin is suppose to be at the bottom left but in DirectX it is at the top left.
-In a full 3D engine the texture would be inverted on the ```y``` axis not to 
-have this change. But for teaching purpose this is nice! Most 2D image loader
-support the flipping of images at load with some instructions like:
+origin is suppose to be at the bottom left but in DirectX and the real world it
+is at the top left. In a full 3D engine the texture would be inverted on the 
+```y``` axis not to have this change. But for teaching purpose this is nice! 
+Most 2D image loader support the flipping of images at load with some 
+instructions like:
 
 ```cpp
 stbi_set_flip_vertically_on_load(true);
